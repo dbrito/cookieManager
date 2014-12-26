@@ -12,14 +12,14 @@ cm.set('abc');
 ###get:
 ```
 //recebe como parametro apenas o string com o nome do cookie desejado
-bs.get('000100010001000100010001');
+cm.get('000100010001000100010001');
 //retornara o string do cookie EX: 'g=HUEBR expires=Thu, 01 Jan 2015 00:00:00 UTC' ou false caso o cookie não exista.
 ```
 
 ###remove:
 ```
 //recebe como parametro apenas o string com o nome do cookie a ser excluido
-bs.remove('cookieteste');
+cm.remove('cookieteste');
 //retornara o valor booleano... true caso o cookie tenha sido excluido e false caso o cookie por algum motivo não tenha sido excluido 
 ```
 
