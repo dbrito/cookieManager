@@ -25,6 +25,6 @@ bs.remove('cookieteste');
 
 
 ** *Importante:**
-o usuario deve estar ciente que os cookies estão atrelados aos dominios e assim entender as limitações da classe ou seja só se pode gerenciar os cookies do dominio da aplicação.
+o usuario deve estar ciente que os cookies estão atrelados aos dominios e assim entender as limitações da classe ou seja só se pode gerenciar os cookies do dominio da aplicação .
 
 [por Douglas Santos](http://douglas.com.br)*
