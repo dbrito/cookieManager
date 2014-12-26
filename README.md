@@ -6,20 +6,20 @@ Primeiramente se cria uma instancia da classe(```var cm = new CookieManager();``
 ###set:
 ```
 //recebe como parametros o nome do cookie, o valor do cookie e tempo de vida do mesmo em dias
-cm.set('abc');
+cm.set('cookieTeste','valorTeste');
 ```
 
 ###get:
 ```
 //recebe como parametro apenas o string com o nome do cookie desejado
-cm.get('000100010001000100010001');
+cm.get('cookieTeste');
 //retornara o string do cookie EX: 'g=HUEBR expires=Thu, 01 Jan 2015 00:00:00 UTC' ou false caso o cookie não exista.
 ```
 
 ###remove:
 ```
 //recebe como parametro apenas o string com o nome do cookie a ser excluido
-cm.remove('cookieteste');
+cm.remove('cookieTeste');
 //retornara o valor booleano... true caso o cookie tenha sido excluido e false caso o cookie por algum motivo não tenha sido excluido 
 ```
 
