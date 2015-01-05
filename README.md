@@ -1,5 +1,5 @@
 #CookieManager
-Classe que tem como objetivo simplificar o gerenciamento de cookies.
+Classe que tem como objetivo simplificar o gerenciamento de cookies ou seja criar, editar e excluir cookies ao chamar de uma função.
 ##Uso:
 Primeiramente se cria uma instancia da classe(```var cm = new CookieManager();```), após isso você já pode utilizar os métodos da classe que são: **set**, **get** e **remove**. Veja o uso da cada um a seguir: 
 
