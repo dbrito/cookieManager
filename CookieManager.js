@@ -1,10 +1,10 @@
 function CookieManager() {
 	this.cookie = document.cookie;
-	this.set = function(nome, valor, dias) {
+	this.set = function(nome, valor, dias, salvarNoDominioPrincipal) {
 		var validade = new Date();
 	    validade.setTime(validade.getTime() + (dias*24*60*60*1000));
 	    var expires = "expires="+validade.toUTCString();
-	    document.cookie = nome + "=" + valor + "; " + expires;
+	    document.cookie = nome + "=" + valor + "; " + expires + (salvarNoDominioPrincipal == true) ? ('; domain=' + dominio + '; path=/') : '';
 	}
 	this.get = function(nome) {
 		var cookies = document.cookie.split(';');

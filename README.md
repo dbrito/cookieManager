@@ -5,8 +5,8 @@ Primeiramente se cria uma instancia da classe(```var cm = new CookieManager();``
 
 ###set:
 ```
-//recebe como parametros o nome do cookie, o valor do cookie e tempo de vida do mesmo em dias
-cm.set('cookieTeste','valorTeste');
+//recebe como parametros o nome do cookie, o valor do cookie e tempo de vida do mesmo em dias, e sem o cookie deve ser salvo no dominio e não no sub-dominio
+cm.set('cookieTeste','valorTeste', 30, true);
 ```
 
 ###get:
@@ -25,6 +25,6 @@ cm.remove('cookieTeste');
 
 
 ** *Importante:**
-o usuario deve estar ciente que os cookies estão atrelados aos dominios e assim entender as limitações da classe ou seja só se pode gerenciar os cookies do dominio da aplicação.
+o usuario deve estar ciente que os cookies estão atrelados aos sub-dominios ou dominios e assim entender as limitações da classe ou seja só se pode gerenciar os cookies do dominio da aplicação.
 
 [por Douglas Santos](http://douglas.com.br)
