@@ -4,20 +4,20 @@ Classe que tem como objetivo simplificar o gerenciamento de cookies ou seja cria
 Primeiramente se cria uma instancia da classe(```var cm = new CookieManager();```), após isso você já pode utilizar os métodos da classe que são: **set**, **get** e **remove**. Veja o uso da cada um a seguir: 
 
 ###set:
-```
+```javascript
 //recebe como parametros o nome do cookie, o valor do cookie e tempo de vida do mesmo em dias, e sem o cookie deve ser salvo no dominio e não no sub-dominio
 cm.set('cookieTeste','valorTeste', 30, true);
 ```
 
 ###get:
-```
+```javascript
 //recebe como parametro apenas o string com o nome do cookie desejado
 cm.get('cookieTeste');
 //retornara o string do cookie EX: 'g=HUEBR expires=Thu, 01 Jan 2015 00:00:00 UTC' ou false caso o cookie não exista.
 ```
 
 ###remove:
-```
+```javascript
 //recebe como parametro apenas o string com o nome do cookie a ser excluido
 cm.remove('cookieTeste');
 //retornara o valor booleano... true caso o cookie tenha sido excluido e false caso o cookie por algum motivo não tenha sido excluido 
