@@ -1,0 +1,292 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -1,82 +1,234 @@
+ <!DOCTYPE html>
+ <html>
+-
++  
+   <head>
+     <meta charset='utf-8'>
+     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+     <meta name="description" content="Cookiemanager : Gerenciamento de cookies...simples e rapido">
+-
++    
+     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+-
+-    <title>Cookiemanager</title>
++    
++    <title>
++      Cookiemanager
++    </title>
+   </head>
+-
++  
+   <body>
+-
++    
+     <!-- HEADER -->
+     <div id="header_wrap" class="outer">
+-        <header class="inner">
+-          <a id="forkme_banner" href="https://github.com/douglas1551/CookieManager">View on GitHub</a>
+-
+-          <h1 id="project_title">Cookiemanager</h1>
+-          <h2 id="project_tagline">Gerenciamento de cookies...simples e rapido</h2>
+-
+-            <section id="downloads">
+-              <a class="zip_download_link" href="https://github.com/douglas1551/CookieManager/zipball/master">Download this project as a .zip file</a>
+-              <a class="tar_download_link" href="https://github.com/douglas1551/CookieManager/tarball/master">Download this project as a tar.gz file</a>
+-            </section>
+-        </header>
++      <header class="inner">
++        <img src="http://www.osmais.com/wallpapers/201204/leao-wallpaper.jpg">
++        <a id="forkme_banner" href="https://github.com/douglas1551/CookieManager">
++          View on GitHub
++        </a>
++        
++        <h1 id="project_title">
++          Cookiemanager
++        </h1>
++        <h2 id="project_tagline">
++          Gerenciamento de cookies...simples e rapido
++        </h2>
++        
++        <section id="downloads">
++          <a class="zip_download_link" href="https://github.com/douglas1551/CookieManager/zipball/master">
++            Download this project as a .zip file
++          </a>
++          <a class="tar_download_link" href="https://github.com/douglas1551/CookieManager/tarball/master">
++            Download this project as a tar.gz file
++          </a>
++        </section>
++      </header>
+     </div>
+-
++    
+     <!-- MAIN CONTENT -->
+     <div id="main_content_wrap" class="outer">
+       <section id="main_content" class="inner">
+         <h1>
+-<a id="cookiemanager" class="anchor" href="#cookiemanager" aria-hidden="true"><span class="octicon octicon-link"></span></a>CookieManager</h1>
+-
+-<p>Classe que tem como objetivo simplificar o gerenciamento de cookies ou seja criar, editar e excluir cookies ao chamar de uma função.</p>
+-
+-<h2>
+-<a id="uso" class="anchor" href="#uso" aria-hidden="true"><span class="octicon octicon-link"></span></a>Uso:</h2>
+-
+-<p>Primeiramente se cria uma instancia da classe(<code>var cm = new CookieManager();</code>), após isso você já pode utilizar os métodos da classe que são: <strong>set</strong>, <strong>get</strong> e <strong>remove</strong>. Veja o uso da cada um a seguir: </p>
+-
+-<h3>
+-<a id="set" class="anchor" href="#set" aria-hidden="true"><span class="octicon octicon-link"></span></a>set:</h3>
+-
+-<div class="highlight highlight-javascript"><pre><span class="pl-c">//recebe como parametros o nome do cookie, o valor do cookie e tempo de vida do mesmo em dias, e sem o cookie deve ser salvo no dominio e não no sub-dominio</span>
+-cm.set(<span class="pl-s1"><span class="pl-pds">'</span>cookieTeste<span class="pl-pds">'</span></span>,<span class="pl-s1"><span class="pl-pds">'</span>valorTeste<span class="pl-pds">'</span></span>, <span class="pl-c1">30</span>, <span class="pl-c1">true</span>);</pre></div>
+-
+-<h3>
+-<a id="get" class="anchor" href="#get" aria-hidden="true"><span class="octicon octicon-link"></span></a>get:</h3>
+-
+-<div class="highlight highlight-javascript"><pre><span class="pl-c">//recebe como parametro apenas o string com o nome do cookie desejado</span>
+-cm.get(<span class="pl-s1"><span class="pl-pds">'</span>cookieTeste<span class="pl-pds">'</span></span>);
+-<span class="pl-c">//retornara o string do cookie EX: 'g=HUEBR expires=Thu, 01 Jan 2015 00:00:00 UTC' ou false caso o cookie não exista.</span></pre></div>
+-
+-<h3>
+-<a id="remove" class="anchor" href="#remove" aria-hidden="true"><span class="octicon octicon-link"></span></a>remove:</h3>
+-
+-<div class="highlight highlight-javascript"><pre><span class="pl-c">//recebe como parametro apenas o string com o nome do cookie a ser excluido</span>
+-cm.<span class="pl-s3">remove</span>(<span class="pl-s1"><span class="pl-pds">'</span>cookieTeste<span class="pl-pds">'</span></span>);
+-<span class="pl-c">//retornara o valor booleano... true caso o cookie tenha sido excluido e false caso o cookie por algum motivo não tenha sido excluido </span></pre></div>
+-
+-<p>** <em>Importante:</em>*
+-o usuario deve estar ciente que os cookies estão atrelados aos sub-dominios ou dominios e assim entender as limitações da classe ou seja só se pode gerenciar os cookies do dominio da aplicação.</p>
+-
+-<p><a href="http://douglas.com.br">por Douglas Santos</a></p>
++          <a id="cookiemanager" class="anchor" href="#cookiemanager" aria-hidden="true">
++            <span class="octicon octicon-link">
++            </span>
++          </a>
++          CookieManager
++        </h1>
++        
++        <p>
++          Classe que tem como objetivo simplificar o gerenciamento de cookies ou seja criar, editar e excluir cookies ao chamar de uma função.
++        </p>
++        
++        <h2>
++          <a id="uso" class="anchor" href="#uso" aria-hidden="true">
++            <span class="octicon octicon-link">
++            </span>
++          </a>
++          Uso:
++        </h2>
++        
++        <p>
++          Primeiramente se cria uma instancia da classe(
++          <code>
++            var cm = new CookieManager();
++          </code>
++          ), após isso você já pode utilizar os métodos da classe que são: 
++          <strong>
++            set
++          </strong>
++          , 
++          <strong>
++            get
++          </strong>
++          e 
++          <strong>
++            remove
++          </strong>
++          . Veja o uso da cada um a seguir: 
++        </p>
++        
++        <h3>
++          <a id="set" class="anchor" href="#set" aria-hidden="true">
++            <span class="octicon octicon-link">
++            </span>
++          </a>
++          set:
++        </h3>
++        
++        <div class="highlight highlight-javascript">
++          <pre>
++<span class="pl-c">
++//recebe como parametros o nome do cookie, o valor do cookie e tempo de vida do mesmo em dias, e sem o cookie deve ser salvo no dominio e não no sub-dominio
++</span>
++cm.set(
++<span class="pl-s1">
++<span class="pl-pds">
++'
++</span>
++cookieTeste
++<span class="pl-pds">
++'
++</span>
++</span>
++,
++<span class="pl-s1">
++<span class="pl-pds">
++'
++</span>
++valorTeste
++<span class="pl-pds">
++'
++</span>
++</span>
++, 
++<span class="pl-c1">
++30
++</span>
++, 
++<span class="pl-c1">
++true
++</span>
++);
++</pre>
++        </div>
++        
++        <h3>
++          <a id="get" class="anchor" href="#get" aria-hidden="true">
++            <span class="octicon octicon-link">
++            </span>
++          </a>
++          get:
++        </h3>
++        
++        <div class="highlight highlight-javascript">
++          <pre>
++<span class="pl-c">
++//recebe como parametro apenas o string com o nome do cookie desejado
++</span>
++cm.get(
++<span class="pl-s1">
++<span class="pl-pds">
++'
++</span>
++cookieTeste
++<span class="pl-pds">
++'
++</span>
++</span>
++);
++<span class="pl-c">
++//retornara o string do cookie EX: 'g=HUEBR expires=Thu, 01 Jan 2015 00:00:00 UTC' ou false caso o cookie não exista.
++</span>
++</pre>
++        </div>
++        
++        <h3>
++          <a id="remove" class="anchor" href="#remove" aria-hidden="true">
++            <span class="octicon octicon-link">
++            </span>
++          </a>
++          remove:
++        </h3>
++        
++        <div class="highlight highlight-javascript">
++          <pre>
++<span class="pl-c">
++//recebe como parametro apenas o string com o nome do cookie a ser excluido
++</span>
++cm.
++<span class="pl-s3">
++remove
++</span>
++(
++<span class="pl-s1">
++<span class="pl-pds">
++'
++</span>
++cookieTeste
++<span class="pl-pds">
++'
++</span>
++</span>
++);
++<span class="pl-c">
++//retornara o valor booleano... true caso o cookie tenha sido excluido e false caso o cookie por algum motivo não tenha sido excluido 
++</span>
++</pre>
++        </div>
++        
++        <p>
++          ** 
++          <em>
++            Importante:
++          </em>
++          *
++          o usuario deve estar ciente que os cookies estão atrelados aos sub-dominios ou dominios e assim entender as limitações da classe ou seja só se pode gerenciar os cookies do dominio da aplicação.
++        </p>
++        
++        <p>
++          <a href="http://douglas.com.br">
++            por Douglas Santos
++          </a>
++        </p>
+       </section>
+     </div>
+-
++    
+     <!-- FOOTER  -->
+     <div id="footer_wrap" class="outer">
+       <footer class="inner">
+-        <p class="copyright">Cookiemanager maintained by <a href="https://github.com/douglas1551">douglas1551</a></p>
+-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
++        <p class="copyright">
++          Cookiemanager maintained by 
++          <a href="https://github.com/douglas1551">
++            douglas1551
++          </a>
++        </p>
++        <p>
++          Published with 
++          <a href="http://pages.github.com">
++            GitHub Pages
++          </a>
++        </p>
+       </footer>
+     </div>
+-
+     
+-
++    
++    
+   </body>
+ </html>
